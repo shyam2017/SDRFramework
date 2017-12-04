@@ -63,7 +63,7 @@
               <artifactId>maven-site-plugin</artifactId>
               <version>3.6</version>
             </plugin>
-    
+    <!--
     <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.1</version>
@@ -71,7 +71,7 @@
                 <fork>true</fork>
                 <executable>C:\Program Files\Java\jdk1.7.0_45\bin\javac.exe</executable>
             </configuration>
-        </plugin>
+        </plugin>  -->
         
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -108,6 +108,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
            <version>3.5.1</version>
                 <configuration>
+                   <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk1.7.0_45\bin\javac.exe</executable>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
