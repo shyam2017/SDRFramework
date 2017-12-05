@@ -57,13 +57,13 @@
   <build>
     
     <plugins>
- 
+  <!--
                 <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-site-plugin</artifactId>
               <version>3.6</version>
             </plugin>
-    <!--
+   
     <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.1</version>
@@ -78,10 +78,10 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.20</version>
             <configuration>
-                <testFailureIgnore>false</testFailureIgnore>
+                <testFailureIgnore>true</testFailureIgnore>
                 <argLine>
                     -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    -Dcucumber.options="--plugin ru.yandex.qatools.allure.cucumberjvm.AllureReporter"
+                    
                 </argLine>
                 <properties>
                     <property>
@@ -90,7 +90,14 @@
                     <value>com.sdrframe.listeners.ListernerTest</value>  
                    
                     </property>
+                   <property>
+                            <name>configfailurepolicy</name>
+                            <value>continue</value>
+                        </property>
                 </properties>
+              <includes>
+                        <include>**/*.java</include>
+                    </includes>
             </configuration>
             <dependencies>
                 <dependency>
