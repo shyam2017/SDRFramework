@@ -23,9 +23,9 @@
   <dependency>
       <groupId>sun.jdk</groupId>
       <artifactId>tools</artifactId>
-      <version>1.8.0_121</version>
+      <version>1.8.0_151</version>
       <scope>system</scope>
-      <systemPath>C:\Program Files (x86)\Java\jdk1.8.0_31\lib\tools.jar</systemPath>
+      <systemPath>C:\Program Files\Java\jre1.8.0_151\lib\tools.jar</systemPath>
     </dependency>
     
     
@@ -83,14 +83,14 @@
               <version>3.6</version>
             </plugin>
    
-    <plugin>
+         <!--     <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.1</version>
             <configuration>
-                <fork>true</fork>
-                <executable>C:\Program Files\Java\jdk1.7.0_45\bin\javac.exe</executable>
+                <fork>false</fork>
+                <executable>${JAVA_1_8_HOME}/bin/javac</executable>
             </configuration>
-        </plugin>  
+        </plugin>    -->
         
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -135,37 +135,16 @@
           
                 <configuration>
                    <fork>true</fork>
-                <executable>C:\Program Files\Java\jdk1.8.0_31\bin\javac.exe</executable>
+                <executable>C:\Program Files\Java\jdk1.8.0_151\bin\javac.exe</executable>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
             </plugin>
             
             
-            <plugin>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-maven-plugin</artifactId>
-            <version>9.4.0.M1</version>
-            <configuration>
-                    <webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
-                     <httpConnector>
-                    <port>${jetty.http.port}</port>
-                </httpConnector>
-                <stopKey>stop</stopKey>
-                <stopPort>1234</stopPort>
-            </configuration>
-        </plugin>
+            
       </plugins>
       
 </build>       
-      <reporting>
-    <excludeDefaults>true</excludeDefaults>
-    <plugins>
-        <plugin>
-            <groupId>ru.yandex.qatools.allure</groupId>
-            <artifactId>allure-maven-plugin</artifactId>
-            <version>${allure.version}</version>
-        </plugin>      
-    </plugins>
-</reporting>
+
 </project>
