@@ -26,19 +26,23 @@ public class ListernerTest extends BaseClass implements ITestListener  {
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
 	
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+		CapabilityFactory.getWebDriver().quit();
 	}
 
 	
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		TakeScreenshot.captureScreenShot(CapabilityFactory.getWebDriver(), result.getName());
+		CapabilityFactory.getWebDriver().quit();
 	}
 
 

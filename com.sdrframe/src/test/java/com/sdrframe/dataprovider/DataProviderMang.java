@@ -11,7 +11,7 @@ public class DataProviderMang {
 
 		
 		new Object[] {"WINDOWS::chrome"},
-	//	new Object[] {"windows_nt::firefox"},
+		new Object[] {"WINDOWS::firefox"},
 //	new Object[] {"WINDOWS::internet explorer"},
 		//new Object[]{"WINDOWS","firefox"},
 		//			new Object[]{"WINDOWS","chrome"}

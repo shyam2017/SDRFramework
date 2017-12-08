@@ -16,19 +16,16 @@ public class CapabilityFactory {
 	  private static ThreadLocal<RemoteWebDriver> webDriver = new ThreadLocal<RemoteWebDriver>();
 	 
 	 static String nodeUrl ="http://166.77.212.84:5555/wd/hub" ;
-	    public static void initiateDriver() throws MalformedURLException {
+	    public static void initiateDriver() throws MalformedURLException, InterruptedException {
 	    	
 	    	
 	    	DesiredCapabilities capabilities = new DesiredCapabilities();
 
 	        // set the browser
-	    //    capabilities.setBrowserName("internet explorer");
-	        
- System.out.println("BROWSER BROWSER BROWSER BROWSER BROWSER  "  + RunParam.getBrowser().value());
 	        capabilities.setBrowserName(RunParam.getBrowser().value());
-
+	        System.out.println("OSTYPE  OSTYPE OSTYPE OSTYPEOSTYPE" +RunParam.getOSType().value());
 	        // set the os/platform
-	        capabilities.setCapability("platform", "WINDOWS");
+	        capabilities.setCapability("platform", RunParam.getOSType().value());
 	        
 	       		
 			webDriver.set(new RemoteWebDriver(new URL(nodeUrl), capabilities));

@@ -39,5 +39,11 @@ public class RunParam {
 	    	return browser.get(); 
 	    }
 
-
+		   public static synchronized void setOSType(DesktopOSType ostype) {
+			   RunParam.osType.set(ostype);
+		    }
+	    
+		    public static synchronized  DesktopOSType getOSType() {
+		    	return osType.get(); 
+		    }
 }

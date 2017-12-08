@@ -89,7 +89,7 @@ public class SubmitDealForm  extends BaseClass{
 
 	  
 	@Test(priority =2)
-	@Stories("AAAAAAAAAAAAAAAAAAAAAA")
+	
 	public void SecondTest() throws InterruptedException{
 	CapabilityFactory.getWebDriver().findElement(By.xpath(".//*[@id='zz13_RootAspMenu']/li[2]/a/span/span[1]")).click();
 		
@@ -121,10 +121,4 @@ public class SubmitDealForm  extends BaseClass{
 	
 
 
-@AfterMethod
-public void closebrosers(){
-	System.out.println("Closing the Browser  TestNGTest ");
-	CapabilityFactory.getWebDriver().close();
-	
-}
 }

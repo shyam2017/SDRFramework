@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" preserve-order="true" thread-count="1" parallel="methods">
+<suite name="Suite" preserve-order="true" thread-count="2" parallel="methods">
   
 
 <parameter name="BuildNumber" value="Latest"></parameter>
@@ -16,7 +16,7 @@
    
     <classes>
       <class name="com.sdrframe.test.SubmitDealForm">
-     <methods>
+ <methods>
         <include name="FirstTest" />
         
       </methods>
