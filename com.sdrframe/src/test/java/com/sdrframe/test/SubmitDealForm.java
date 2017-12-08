@@ -55,7 +55,7 @@ public class SubmitDealForm  extends BaseClass{
 	}
 		
 	
-	@Test(priority =1)
+	@Test(groups ={ "Regression","Smoke" })
 	
 	public void FirstTest() throws InterruptedException, AWTException{
 		Thread.sleep(5000);
