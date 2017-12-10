@@ -137,7 +137,7 @@
         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-          
+          <version>3.7.0</version>
                 <configuration>
                   
                 <executable>C:\Program Files\Java\jdk1.8.0_101\bin\javac.exe</executable>
