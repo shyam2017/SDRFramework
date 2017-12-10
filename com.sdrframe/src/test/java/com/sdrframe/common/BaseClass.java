@@ -1,5 +1,6 @@
 package com.sdrframe.common;
 
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 
@@ -12,10 +13,6 @@ import com.sdrframe.utils.RunParam;
 public class BaseClass {
 	protected String runParams;
 	
-
-	WebDriver driver;
-	static String nodeUrl;
-	
 	
 
 
@@ -27,13 +24,13 @@ public class BaseClass {
 	
    @BeforeMethod(alwaysRun = true)
 	    public void startSelenium() {
-	   System.out.println("value is Start Selenium   " );
+	   System.out.println("value is Start Selenium   ");
 	   RunParam.init(runParams);
 	 
 		   
 	   }
 
-	 
+
 	   
 		
 }
