@@ -19,6 +19,18 @@
 
 
   <dependencies>
+  <!-- Reading the XML -->
+  <dependency>
+    <groupId>xalan</groupId>
+    <artifactId>xalan</artifactId>
+    <version>2.7.1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlbeans</groupId>
+    <artifactId>xmlbeans-xpath</artifactId>
+    <version>2.3.0</version>
+</dependency>
   
   <dependency>
       <groupId>sun.jdk</groupId>

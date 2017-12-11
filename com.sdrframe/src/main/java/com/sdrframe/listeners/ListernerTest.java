@@ -1,5 +1,6 @@
 package com.sdrframe.listeners;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.testng.ITestContext;
@@ -8,6 +9,7 @@ import org.testng.ITestResult;
 
 import com.sdrframe.common.BaseClass;
 import com.sdrframe.driver.CapabilityFactory;
+import com.sdrframe.utils.CommandExecutor;
 import com.sdrframe.utils.RunParam;
 import com.sdrframe.utils.TakeScreenshot;
 
@@ -18,7 +20,13 @@ public class ListernerTest extends BaseClass implements ITestListener  {
 	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+	/*	try {
+			CommandExecutor.exeCmd();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		*/
 				try {
 					System.out.println("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII" + RunParam.getBrowser().value());
 

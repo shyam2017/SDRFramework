@@ -3,7 +3,7 @@
 <suite name="Suite" preserve-order="true" thread-count="2"	parallel="methods">
 
 
-	<parameter name="BuildNumber" value="Latest"></parameter>
+	<parameter name="TargetURL" value="http://flowstg.viacom.com"></parameter>
 
 	<listeners>
 		<listener class-name="com.sdrframe.listeners.ListernerTest" />
