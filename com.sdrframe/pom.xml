@@ -19,6 +19,22 @@
 
 
   <dependencies>
+  
+  <!-- https://mvnrepository.com/artifact/com.codepine.api/testrail-api-java-client -->
+<dependency>
+    <groupId>com.codepine.api</groupId>
+    <artifactId>testrail-api-java-client</artifactId>
+    <version>2.0.0</version>
+</dependency>
+
+<!--  For TestRail Json Oject -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
+
   <!-- Reading the XML -->
   <dependency>
     <groupId>xalan</groupId>
@@ -37,7 +53,7 @@
       <artifactId>tools</artifactId>
       <version>jdk1.8.0_101</version>
       <scope>system</scope>
-      <systemPath>C:\Program Files\Java\jdk1.8.0_101\lib\tools.jar</systemPath>
+      <systemPath>C:\Program Files\Java\jdk1.8.0_151\lib\tools.jar</systemPath>
     </dependency>
     
     
