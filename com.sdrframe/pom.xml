@@ -120,7 +120,7 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.1</version>
             <configuration>
-                <fork>true</fork>
+                <fork>never</fork>
                 <executable>${JAVA_1_8_HOME}/bin/javac</executable>
             </configuration>
         </plugin>    -->
