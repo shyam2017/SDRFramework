@@ -22,8 +22,8 @@ public class ListernerTest extends BaseClass implements ITestListener  {
 	
 	public void onTestStart(ITestResult result) {
 		
-		System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +JenkinsAPI.getRunningJobName());
-		System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +JenkinsAPI.getRunningBuildId());
+		System.out.println("Job Name of Jenkins is   --------  " +JenkinsAPI.getRunningJobName());
+		System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS"  + JenkinsAPI.getRunningBuildId());
 	//	String str=CommandExecutor.execCommand("ipconfig", null, null);
 	//	System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +str);
 		// TODO Auto-generated method stub
