@@ -14,15 +14,15 @@ public class RunParam {
     		// set the browser
 			
     			browser.set(BrowserType.getEnumByString(runParams.split("::")[1]));
-    		System.out.println(" ValAAAAAAAAAAAAAAAAAAA" +runParams.split("::")[1]);
-    		System.out.println(" ValAAAAAAAAAAAAAAAAAAA" +browser.get());
+    		System.out.println(" Browser set as   " +runParams.split("::")[1]);
+    //		System.out.println("OSTYPE set as  " +browser.get());
     		BrowserType threadLocalValue =(BrowserType)browser.get();
-    		System.out.println(" OOOOOOOO" + threadLocalValue);
+    		
     		
     		// set the os type    		
     			osType.set(DesktopOSType.getEnumByString(runParams.split("::")[0]));
     					            
-    			System.out.println(" BBBBBBBBBBBBBBBBBBBBB" +runParams.split("::")[0]);
+    			System.out.println(" OSTYPE set as" +runParams.split("::")[0]);
     		
     	}
 		

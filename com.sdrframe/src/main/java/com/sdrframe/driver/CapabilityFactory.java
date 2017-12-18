@@ -27,7 +27,7 @@ public class CapabilityFactory {
 	    	
 	        // set the browser
 	        capabilities.setBrowserName(RunParam.getBrowser().value());
-	        System.out.println("OSTYPE  OSTYPE OSTYPE OSTYPEOSTYPE" +RunParam.getOSType().value());
+	        System.out.println("OS Type is set as Capability  " +RunParam.getOSType().value());
 	        // set the os/platform
 	        capabilities.setCapability("platform", RunParam.getOSType().value());
 	        
