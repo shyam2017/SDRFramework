@@ -7,6 +7,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.sdrframe.Proxy.ProxyManager;
+import com.sdrframe.TestRail.TestRailManager;
 import com.sdrframe.common.BaseClass;
 import com.sdrframe.driver.CapabilityFactory;
 import com.sdrframe.utils.CommandExecutor;
@@ -19,6 +21,10 @@ public class ListernerTest extends BaseClass implements ITestListener  {
 
 	
 	public void onTestStart(ITestResult result) {
+		
+		System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +CapabilityFactory.getRunningJobName());
+	//	String str=CommandExecutor.execCommand("ipconfig", null, null);
+	//	System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +str);
 		// TODO Auto-generated method stub
 	/*	try {
 			CommandExecutor.exeCmd();
@@ -28,7 +34,7 @@ public class ListernerTest extends BaseClass implements ITestListener  {
 		}
 		*/
 				try {
-					System.out.println("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII" + RunParam.getBrowser().value());
+					
 
 			CapabilityFactory.initiateDriver();
 		} catch (MalformedURLException e) {
