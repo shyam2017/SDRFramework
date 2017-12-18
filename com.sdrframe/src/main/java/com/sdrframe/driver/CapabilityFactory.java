@@ -40,11 +40,7 @@ public class CapabilityFactory {
 	    }
 	    
 
-
-
-		public static String getRunningJobName() {
-			return System.getenv("JOB_NAME");
-		}
+	
 
 
 	    public static RemoteWebDriver getWebDriver() {

@@ -11,6 +11,7 @@ import org.testng.ITestResult;
 import com.sdrframe.common.BaseClass;
 import com.sdrframe.driver.CapabilityFactory;
 import com.sdrframe.utils.CommandExecutor;
+import com.sdrframe.utils.JenkinsAPI;
 import com.sdrframe.utils.RunParam;
 import com.sdrframe.utils.TakeScreenshot;
 
@@ -21,7 +22,8 @@ public class ListernerTest extends BaseClass implements ITestListener  {
 	
 	public void onTestStart(ITestResult result) {
 		
-		System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +CapabilityFactory.getRunningJobName());
+		System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +JenkinsAPI.getRunningJobName());
+		System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +JenkinsAPI.getRunningBuildId());
 	//	String str=CommandExecutor.execCommand("ipconfig", null, null);
 	//	System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSS" +str);
 		// TODO Auto-generated method stub
