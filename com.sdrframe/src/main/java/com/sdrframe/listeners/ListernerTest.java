@@ -7,8 +7,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.sdrframe.Proxy.ProxyManager;
-import com.sdrframe.TestRail.TestRailManager;
+
 import com.sdrframe.common.BaseClass;
 import com.sdrframe.driver.CapabilityFactory;
 import com.sdrframe.utils.CommandExecutor;
