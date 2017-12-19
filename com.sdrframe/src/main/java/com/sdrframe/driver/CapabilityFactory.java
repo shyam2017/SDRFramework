@@ -18,7 +18,7 @@ public class CapabilityFactory {
 	  private static ThreadLocal<RemoteWebDriver> webDriver = new ThreadLocal<RemoteWebDriver>();
 	  
 	 
-	 static String nodeUrl ="http://166.77.212.84:5555/wd/hub" ;
+	 static String nodeUrl ="http://166.77.212.205:4444/wd/hub" ;
 	  
 	    public static void initiateDriver() throws MalformedURLException, InterruptedException {
 	    	
@@ -32,8 +32,8 @@ public class CapabilityFactory {
 	        capabilities.setCapability("platform", RunParam.getOSType().value());
 	        
 	       
-		//	webDriver.set(new RemoteWebDriver(new URL(nodeUrl), capabilities));
-			webDriver.set(new RemoteWebDriver(capabilities));
+			webDriver.set(new RemoteWebDriver(new URL(nodeUrl), capabilities));
+		//	webDriver.set(new RemoteWebDriver(capabilities));
 			
 	        getWebDriver().get(ReadXML.config.GET_URL);
 		    setWebDriver(webDriver.get());
