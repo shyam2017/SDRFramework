@@ -17,8 +17,10 @@ import com.sdrframe.utils.TakeScreenshot;
 
 import junit.framework.Assert;
 import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Severity;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
+import ru.yandex.qatools.allure.model.SeverityLevel;
 
 
 
@@ -60,6 +62,7 @@ public class SubmitDealForm  extends BaseClass{
 	@Test(groups ={ "Regression","Smoke" })
 	@TestCaseId("3")
 	@Features("Module 1")
+	@Severity(SeverityLevel.NORMAL)
 	public void FirstTest() throws InterruptedException, AWTException{
 		Thread.sleep(5000);
 		CapabilityFactory.getWebDriver().findElement(By.xpath(".//*[@id='zz13_RootAspMenu']/li[1]/a/span/span")).click();
@@ -94,6 +97,7 @@ public class SubmitDealForm  extends BaseClass{
 	@Test(priority =2)
 	@TestCaseId("2")
 	@Features("Module 2")
+	@Severity(SeverityLevel.NORMAL)
 	public void SecondTest() throws InterruptedException{
 	CapabilityFactory.getWebDriver().findElement(By.xpath(".//*[@id='zz13_RootAspMenu']/li[2]/a/span/span[1]")).click();
 		
