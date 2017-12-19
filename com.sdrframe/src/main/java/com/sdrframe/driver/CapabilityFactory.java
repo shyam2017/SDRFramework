@@ -32,8 +32,8 @@ public class CapabilityFactory {
 	        capabilities.setCapability("platform", RunParam.getOSType().value());
 	        
 	       
-			webDriver.set(new RemoteWebDriver(new URL(nodeUrl), capabilities));
-	//		webDriver.set(new RemoteWebDriver(capabilities));
+		//	webDriver.set(new RemoteWebDriver(new URL(nodeUrl), capabilities));
+			webDriver.set(new RemoteWebDriver(capabilities));
 			
 	        getWebDriver().get(ReadXML.config.GET_URL);
 		    setWebDriver(webDriver.get());
