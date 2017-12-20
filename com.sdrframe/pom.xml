@@ -20,6 +20,9 @@
 
   <dependencies>
   
+
+
+  
   <!-- https://mvnrepository.com/artifact/com.codepine.api/testrail-api-java-client -->
 <dependency>
     <groupId>com.codepine.api</groupId>
@@ -83,6 +86,13 @@
   <artifactId>maven-compiler-plugin</artifactId>
   <version>3.7.0</version>
   <type>maven-plugin</type>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.allure/allure-maven-plugin -->
+<dependency>
+    <groupId>ru.yandex.qatools.allure</groupId>
+    <artifactId>allure-maven-plugin</artifactId>
+    <version>2.6</version>
 </dependency>
 
 
