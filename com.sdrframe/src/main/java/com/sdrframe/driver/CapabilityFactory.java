@@ -18,7 +18,7 @@ public class CapabilityFactory {
 	  private static ThreadLocal<RemoteWebDriver> webDriver = new ThreadLocal<RemoteWebDriver>();
 	  
 	 
-	 static String nodeUrl ="http://166.77.212.205:5555/wd/hub" ;
+	 static String nodeUrl ="http://166.77.212.205:4443/wd/hub" ;
 	  
 	    public static void initiateDriver() throws MalformedURLException, InterruptedException {
 	    	
