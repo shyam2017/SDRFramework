@@ -7,7 +7,7 @@ import java.util.List;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 
-import com.sdrframe.TestRail.TestRailManager;
+//import com.sdrframe.TestRail.TestRailManager;
 import com.sdrframe.common.BaseClass;
 import com.sdrframe.props.TestIDs;
 
@@ -34,7 +34,7 @@ public class SuiteListeners extends BaseClass implements ISuiteListener{
 	public void onStart(ISuite suite) {
 		// TODO Auto-generated method stub
 		
-		TestRailManager.startNewSuiteRun("0","0", suite );
+	//	TestRailManager.startNewSuiteRun("0","0", suite );
 	}
 
 }
