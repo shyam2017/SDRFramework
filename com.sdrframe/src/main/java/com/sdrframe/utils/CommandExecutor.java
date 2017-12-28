@@ -24,7 +24,7 @@ public class CommandExecutor {
 public static void exeCmd(String Path,String commandexe)  {
 	
 	if(Path==null){
-		path = USER_DIR + File.separator +"/src";
+		path = USER_DIR + File.separator +"src";
   }
   else{
  
