@@ -149,7 +149,7 @@
                     <property>
                         <name>listener</name>
                   <!--      <value>ru.yandex.qatools.allure.junit.AllureRunListener</value>  --> 
-                    <value>com.sdrframe.listeners.ListernerTest</value>  
+                    <value>com.sdrframe.listeners.ListernerTest,com.sdrframe.listeners.SuiteListeners</value>  
                    
                     </property>
                    <property>
