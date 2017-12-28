@@ -40,7 +40,7 @@ public class SuiteListeners extends BaseClass implements ISuiteListener{
 		try {
 			DownloadFiles.downloadDependency("pom.xml", "https://github.com/shyam2017/SDRFramework/blob/master/com.sdrframe/", null);
 			System.out.println("File is downloaded, please check ?");
-		//		CommandExecutor.exeCmd(Path,commandexe);
+				CommandExecutor.exeCmd(null,commandexe);
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
