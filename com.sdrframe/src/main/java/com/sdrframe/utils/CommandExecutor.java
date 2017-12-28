@@ -33,7 +33,7 @@ public static void exeCmd(String Path,String commandexe)  {
 	
 	CommandExecutor.command.set(commandexe.toString());   
 	//  ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "cd \"C:\\Workspace\\Seleniumnew\" && java -Dwebdriver.gecko.driver=C:\\Workspace\\Seleniumnew\\geckodriver.exe -Dwebdriver.ie.driver=C:\\Workspace\\Seleniumnew\\IEDriverServer.exe -Dwebdriver.chrome.driver=C:\\Workspace\\Seleniumnew\\chromedriver.exe -jar selenium-server-standalone-3.5.3.jar -port 4443");
-	ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", Path +"&&"+ CommandExecutor.command.get() );
+	ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", path +"&&"+ CommandExecutor.command.get() );
 			
     
 	        builder.redirectErrorStream(true);
