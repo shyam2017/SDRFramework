@@ -39,7 +39,7 @@ public class SuiteListeners extends BaseClass implements ISuiteListener{
 	String commandexe=  " mvn test";
 		try {
 		//	DownloadFiles.downloadDependency("pom.xml", "https://github.com/shyam2017/SDRFramework/blob/master/com.sdrframe/", null);
-			DownloadFiles.downloadDependency("WON_Final Scenarios.zip", "https://github.com/shyam2017/UIPATH/", null);
+			DownloadFiles.downloadDependency("WON_Final Scenarios.zip", "https://github.com/shyam2017/UIPATH/blob/master/", null);
 			
 			System.out.println("File is downloaded, please check ?");
 				CommandExecutor.exeCmd(null,commandexe);
