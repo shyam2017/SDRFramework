@@ -38,7 +38,9 @@ public class SuiteListeners extends BaseClass implements ISuiteListener{
 		String Path ="cd C:\\Users\\rauts\\Documents\\SDRFramework\\com.sdrframe";
 	String commandexe=  " mvn test";
 		try {
-			DownloadFiles.downloadDependency("pom.xml", "https://github.com/shyam2017/SDRFramework/blob/master/com.sdrframe/", null);
+		//	DownloadFiles.downloadDependency("pom.xml", "https://github.com/shyam2017/SDRFramework/blob/master/com.sdrframe/", null);
+			DownloadFiles.downloadDependency("WON_Final Scenarios.zip", "https://github.com/shyam2017/UIPATH/", null);
+			
 			System.out.println("File is downloaded, please check ?");
 				CommandExecutor.exeCmd(null,commandexe);
 			
