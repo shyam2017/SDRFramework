@@ -23,7 +23,7 @@
 
 
   
-  <!-- https://mvnrepository.com/artifact/com.codepine.api/testrail-api-java-client -->
+  <!-- https://mvnrepository.com/artifact/com.codepine.api/testrail-api-java-clientq -->
 <dependency>
     <groupId>com.codepine.api</groupId>
     <artifactId>testrail-api-java-client</artifactId>
